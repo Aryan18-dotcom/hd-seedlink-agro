@@ -16,6 +16,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://your-actual-domain.vercel.app'),
   title: {
     default: "HD Seedlink Agro LLP | Cultivating Tomorrow, Connecting Growth",
     template: "%s | HD Seedlink Agro",
