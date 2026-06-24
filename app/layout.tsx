@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
+  
 };
 
 export default function RootLayout({
@@ -64,6 +65,12 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${outfit.variable} h-full antialiased`}
     >
+    <head>
+        <meta 
+          name="google-site-verification" 
+          content="-DBKZ8rR4sxMLDMjjx3d4CiAK0-b-3X32lQrybDX-j0" 
+        />
+      </head>
       <body className="min-h-full flex flex-col font-sans" cz-shortcut-listen="true">
         <SmoothScrolling>
           {children}
