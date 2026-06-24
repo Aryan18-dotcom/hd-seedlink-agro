@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.20",
+    "dotenv": "^17.4.2",
     "framer-motion": "^12.41.0",
     "lenis": "^1.3.23",
     "lucide-react": "^1.21.0",
