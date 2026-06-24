@@ -16,12 +16,40 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "HD Seedlink Agro LLP | Cultivating Tomorrow, Connecting Growth",
-  description: "Cultivating Tomorrow, Connecting Growth",
+  title: {
+    default: "HD Seedlink Agro LLP | Cultivating Tomorrow, Connecting Growth",
+    template: "%s | HD Seedlink Agro",
+  },
+  description: "HD Seedlink Agro LLP is a premier agricultural solution provider. We bridge traditional farming expertise with modern sustainable technology to cultivate growth, improve yields, and connect farmers to markets.",
+  keywords: ["Agriculture", "Agrotech", "Seedlink", "Sustainable Farming", "Ahmedabad Agriculture", "HD Seedlink", "Crop Solutions"],
+  authors: [{ name: "Aryan Chheda" }],
+  creator: "Aryan Chheda",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://hd-seedlink-agro.vercel.app", // Replace with your actual domain
+    title: "HD Seedlink Agro LLP | Cultivating Tomorrow, Connecting Growth",
+    description: "Bridging the gap between traditional farming and modern sustainable agricultural technology.",
+    siteName: "HD Seedlink Agro",
+    images: [
+      {
+        url: "/opengraph-image.png", // Ensure this exists in your 'public' folder
+        width: 1200,
+        height: 630,
+        alt: "HD Seedlink Agro Banner",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HD Seedlink Agro LLP | Cultivating Tomorrow, Connecting Growth",
+    description: "Bridging the gap between traditional farming and modern sustainable agricultural technology.",
+    images: ["/opengraph-image.png"],
+  },
   icons: {
-    icon: "./favicon.png", // Path relative to the 'public' folder
-    shortcut: "./favicon.png",
-    apple: "./favicon.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
@@ -34,7 +62,6 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${cormorant.variable} ${outfit.variable} h-full antialiased`}
-      
     >
       <body className="min-h-full flex flex-col font-sans" cz-shortcut-listen="true">
         <SmoothScrolling>
