@@ -16,7 +16,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://your-actual-domain.vercel.app'),
+  metadataBase: new URL('https://hd-seedlink-agro.vercel.app'),
   title: {
     default: "HD Seedlink Agro LLP | Cultivating Tomorrow, Connecting Growth",
     template: "%s | HD Seedlink Agro",
@@ -25,34 +25,40 @@ export const metadata: Metadata = {
   keywords: ["Agriculture", "Agrotech", "Seedlink", "Sustainable Farming", "Ahmedabad Agriculture", "HD Seedlink", "Crop Solutions"],
   authors: [{ name: "Aryan Chheda" }],
   creator: "Aryan Chheda",
+  
+  verification: {
+    google: "-DBKZ8rR4sxMLDMjjx3d4CiAK0-b-3X32lQrybDX-j0",
+  },
+  
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://hd-seedlink-agro.vercel.app", // Replace with your actual domain
+    url: "https://hd-seedlink-agro.vercel.app", 
     title: "HD Seedlink Agro LLP | Cultivating Tomorrow, Connecting Growth",
     description: "Bridging the gap between traditional farming and modern sustainable agricultural technology.",
     siteName: "HD Seedlink Agro",
     images: [
       {
-        url: "/opengraph-image.png", // Ensure this exists in your 'public' folder
+        url: "/opengraph-image.png", 
         width: 1200,
         height: 630,
         alt: "HD Seedlink Agro Banner",
       },
     ],
   },
+  
   twitter: {
     card: "summary_large_image",
     title: "HD Seedlink Agro LLP | Cultivating Tomorrow, Connecting Growth",
     description: "Bridging the gap between traditional farming and modern sustainable agricultural technology.",
     images: ["/opengraph-image.png"],
   },
+  
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
-  
 };
 
 export default function RootLayout({
@@ -65,12 +71,6 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${outfit.variable} h-full antialiased`}
     >
-    <head>
-        <meta 
-          name="google-site-verification" 
-          content="-DBKZ8rR4sxMLDMjjx3d4CiAK0-b-3X32lQrybDX-j0" 
-        />
-      </head>
       <body className="min-h-full flex flex-col font-sans bg-[#E6EBF0]" cz-shortcut-listen="true">
         <SmoothScrolling>
           {children}
