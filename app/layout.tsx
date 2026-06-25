@@ -71,7 +71,7 @@ export default function RootLayout({
           content="-DBKZ8rR4sxMLDMjjx3d4CiAK0-b-3X32lQrybDX-j0" 
         />
       </head>
-      <body className="min-h-full flex flex-col font-sans" cz-shortcut-listen="true">
+      <body className="min-h-full flex flex-col font-sans bg-[#E6EBF0]" cz-shortcut-listen="true">
         <SmoothScrolling>
           {children}
         </SmoothScrolling>
