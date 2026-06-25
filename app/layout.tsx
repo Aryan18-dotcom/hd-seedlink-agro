@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "HD Seedlink Agro",
     images: [
       {
-        url: "/opengraph-image.png", 
+        url: "/opengraph-image.jpg", 
         width: 1200,
         height: 630,
         alt: "HD Seedlink Agro Banner",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HD Seedlink Agro LLP | Cultivating Tomorrow, Connecting Growth",
     description: "Bridging the gap between traditional farming and modern sustainable agricultural technology.",
-    images: ["/opengraph-image.png"],
+    images: ["/opengraph-image.jpg"],
   },
   
   icons: {
