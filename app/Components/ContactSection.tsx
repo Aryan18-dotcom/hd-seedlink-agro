@@ -67,8 +67,8 @@ const ContactSection = () => {
 
             <div className="space-y-6">
               {[
-                { icon: Mail, label: 'Email Us', value: 'info@hdseedlink.com', href: 'mailto:info@hdseedlink.com' },
-                { icon: Phone, label: 'Call Our Office', value: '+91 98765 43210', href: 'tel:+919876543210' },
+                { icon: Mail, label: 'Email Us', value: 'hdseedlinkagro@gmail.com', href: 'mailto:hdseedlinkagro@gmail.com' },
+                { icon: Phone, label: 'Call Our Office', value: '+91 98200 65339 / +91 99241 29942', href: 'tel:+919820065339' },
                 { icon: MapPin, label: 'Our Headquarters', value: 'Ahmedabad, Gujarat, India', href: '#' }
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-center">
